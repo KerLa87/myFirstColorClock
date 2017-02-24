@@ -58,7 +58,7 @@ html, body {
   if (hours<10) {
   hours='0'+hours;
   }
-  var clockFace=hours+'.'+minutes+'.'+seconds;
+  var clockFace=hours+'\u0f08'+minutes+'\u0f08'+seconds;
   var hexColor1='#'+hours+minutes+seconds;
   var hexColor2='#'+seconds+minutes+hours; document.getElementById('clock').innerHTML=clockFace;
   if (seconds<15) { document.getElementById('clock').style.fontFamily='Dosis, sans-serif';
